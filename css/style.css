@@ -1,0 +1,248 @@
+@charset 'UTF-8';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+
+/* normalize dis shit */
+
+	html, body {
+
+		margin: 0;
+		padding: 0;
+
+	}
+
+	p {
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+	}
+
+	a:link {
+    text-decoration: none;
+    color: white;
+	}
+
+	a:visited {
+	    text-decoration: none;
+	    color: white;
+	}
+
+	a:hover {
+	    text-decoration: none;
+	}
+
+	a:active {
+	    text-decoration: none;
+	}
+
+	.content {
+		padding-top: 80px;
+	}
+
+/* General stuff */
+
+	.hidden {
+		display: none;
+	}
+
+
+/* Header Styling */
+
+	
+	.header {
+		height: 80px;
+		position: fixed;
+		padding: 0 15px;
+		background-color: rgba(10,10,10,1);
+		width: 100%;
+		z-index: 1;
+		text-align: left;
+		display: block;
+	    -webkit-transition: all .2s ease;
+	    -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	    -o-transition: all .2s ease;
+	    transition: all .2s ease;
+	}
+
+	.logo {
+		font-family: "Abril Fatface", 'serif';
+		text-align: left;
+		color: white;
+		margin: 0 0;
+   		display: inline-block;
+	}	
+
+	.menu {
+		margin: 0 auto;
+		overflow: auto;
+		text-align: center;
+		font-size: 90%;
+		font-family: "Open Sans", "sans-serif";
+		font-weight: "300";
+		color: white;
+		display: inline-block;
+		letter-spacing: 2px;
+		float: right;
+		margin: 35px;
+	    -webkit-transition: all .5s ease;
+	    -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	    -o-transition: all .5s ease;
+	    transition: all .5s ease;
+	}
+
+	.menu span {
+		-webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	    -o-transition: all 1s ease;
+	    transition: all 1smedia
+	     ease;
+	}
+
+	.menu span:hover {
+		color: rgb(246,117,0);
+	}	
+
+/*
+	.menu_item {
+		display: inline-block;
+		background-position: 50% 0%;
+		background-repeat:no-repeat;
+   		background-size:contain;
+   		display: inline-block;
+
+	}	
+
+	#menu_about {
+		margin: 0px 0%;
+		height: 48px;
+		width: 38px;
+		background-image: url('../img/home.png');
+
+	}
+
+	#menu_work {
+		margin: 0px 5%;
+		height: 48px;
+		width: 42px;
+		background-image: url('../img/work.png');
+	}
+
+	#menu_contact {
+		margin: 0px auto;
+		height: 48px;
+		width: 45px;
+		background-image: url('../img/contact.png');
+	}		*/
+
+/* about styling */
+
+	.tab_about {
+		width: 100%;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.biography {
+		max-width: 60%;
+		text-align: justify;
+		margin: 20px auto;
+		font-family: "Open Sans", sans-serif;
+		font-weight:300;
+		font-size: 1em;
+		display: inline-block;
+		line-height: 200%;
+		vertical-align: top;
+		-webkit-transition: all .6s ease;
+	    -moz-transition: all .6s ease;
+	    -ms-transition: all .6s ease;
+	    -o-transition: all .6s ease;
+	    transition: all .6s media
+	     ease;	
+
+	}
+
+	.wa_pic {
+		margin: 0px auto;
+		height: 300px;
+		width: 100%;
+		background-image: url('../img/wa2.jpg');
+		background-position: 0px 36%;
+		background-repeat:no-repeat;
+   		background-size:100% auto;
+   		display: block;
+		-webkit-transition: all .6s ease;
+	    -moz-transition: all .6s ease;
+	    -ms-transition: all .6s ease;
+	    -o-transition: all .6s ease;
+	    transition: all .6s media
+	     ease;   
+	}
+
+/* gallery styling */
+
+	.gallery_container {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 80%;
+	}
+
+
+
+
+/* selection color */
+
+	::selection {
+		color: white;
+		background: black
+		/*rgb(246,117,0)*/
+	}
+
+	::-moz-selection {
+		color: white;
+		background: black;
+	}	
+
+@media (min-width:800px) {
+	.header {
+	}
+
+	.menu span {
+		margin: 0 10px;
+	}	
+
+	.tab_about {
+		text-align: center;
+	}
+
+	.wa_pic {
+		margin: 40px 0 0 0;
+		height: 480px;
+		width: 400px;
+		background-image: url('../img/wa2.jpg');
+		background-position: -100px -150px;
+		background-repeat:no-repeat;
+   		background-size: 600px auto;
+   		display: inline-block;		
+	}
+
+	.biography {
+		max-width: 300px;
+		text-align: justify;
+		padding-left: 20px;
+		margin: 40px auto;
+		font-family: "Open Sans", sans-serif;
+		font-weight:300;
+		font-size: 1.0em;
+		display: inline-block;
+		line-height: 295%;
+		vertical-align: top;	
+
+	}	
+
+}
+
+
